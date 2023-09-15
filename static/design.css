@@ -1,5 +1,31 @@
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.id{
+    font-size: 100px;
+}
 .container{
+   
+    align-items: center;
+    text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 1%;
+    padding: 1%;
+    background-image: url(https://miro.medium.com/v2/resize:fit:1600/format:gif/0*C-cPP9D2MIyeexAT.gif);
+    
+}
+
+.child {
+    text-align: center;
+    display: table;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    
+    text-decoration:underline rgb(0, 0, 0);
+    border: 2px rgb(202, 212, 21) solid;
+    
 }
 
