@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/design.css" rel="stylesheet"  type="text/css">
+    <title>JOB PLACEMENT PREDICTION</title>
+</head>
+<body >
+    <p class="id">JOB PLACEMENT PREDICTION</p>
+   
+    
+    <div class="container">
+
+       
+        <div class="child">
+            <h1>PREDICTION DETAILS<h1>
+            <form method="post" action="predict">
+
+
+                <label for="gender">Gender</label>
+                <input type="text" list="gender"  name="gender">
+                <datalist id="gender">
+                    <option value="M">
+                    <option value="F">
+                </datalist>
+
+
+            
+                <br>
+                <br>
+                
+
+                <label for="ssc_percentage">SSC PERCENTAGE</label>
+                <input type="number" name="ssc_percentage" step="0.1" required>
+                <br>
+                <br>
+
+
+                <label for="ssc_board">SSC BOARD</label>
+                <input type="text" name="ssc_board" list="ssc_board">
+
+                <datalist id="ssc_board">
+                    <option value="Central"></option>
+                    <option value="Others"></option>
+                    
+                </datalist>
+
+
+
+                <br>
+                <br>
+
+                <label for="hsc_percentage">HSC PERCENTAGE</label>
+                <input type="number" name="hsc_percentage" step="0.1" required>
+                <br>
+                <br>
+
+
+
+                <label for="hsc_board">HSC BOARD</label>
+                <input type="text" name="hsc_board" list="hsc_board">
+
+                <datalist id="hsc_board">
+                    <option value="Central"></option>
+                    <option value="Others"></option>
+                    
+                </datalist>
+
+
+
+
+
+                <br>
+                <br>
+
+                <label for="hsc_subject">HSC SUBJECT</label>
+                <input type="text" name="hsc_subject" list="hsc_subject">
+
+                <datalist id="hsc_subject">
+                    <option value="Commerce"></option>
+                    <option value="Science"></option>
+                    <option value="Arts"></option>
+                    
+                </datalist>
+
+
+                <br>
+                <br>
+
+                <label for="degree_percentage">GRADUATION PERCENTAGE</label>
+                <input type="number" name="degree_percentage" step="0.1" required>
+                <br>
+                <br>
+
+                <label for="undergrad_degree">GRADUATION DEGREE</label>
+                <input type="text" name="undergrad_degree" list="undergrad_degree">
+
+                <datalist id="undergrad_degree">
+                    <option value="Comm&Mgmt"></option>
+                    <option value="Sci&Tech"></option>
+                    <option value="Others"></option>
+                    
+                </datalist>
+
+
+
+
+                <br>
+                <br>
+
+                <label for="work_experience">WORK EXPERIENCE</label>
+                <input type="text" name="work_experience" list="work_experience">
+                <datalist id="work_experience">
+                    <option value="No"></option>
+                    <option value="Yes"></option>
+                    
+                    
+                </datalist>
+                
+
+
+
+
+                <br>
+                <br>
+
+                <label for="emp_test_percentage">EMP TEST PERCENTAGE</label>
+                <input type="number" name="emp_test_percentage" step="0.1" required>
+                <br>
+                <br>
+
+
+                <label for="specialisation">SPECIALISATION</label>
+                <input type="text" name="specialisation" list="specialisation">
+
+                <datalist id="specialisation">
+                    <option value="Mkt&Fin"></option>
+                    <option value="Mkt&HR"></option>
+                    
+                    
+                </datalist>
+                <br>
+
+
+
+
+                <br>
+                <label for="mba_percent">MBA PERCENTAGE</label>
+                <input type="number" name="mba_percent" step="0.1" required>
+                <br>
+                <br>
+
+                <input type="submit" value="predict">
+
+
+
+            </form>
+        </div>
+
+        <div class="child">
+            <h1 > Report</h1>
+            <h1><label>JOB : {{result}}</label></h1>
+
+
+            <h1><label>Gender: {{gender}}</label></h1>
+            <h1><label>SSC Percentage : {{ssc_percentage}}</label></h1>
+            <h1><label>SSC BOARD : {{ssc_board}}</label></h1>
+            <h1><label>HSC Percentage : {{hsc_percentage}}</label></h1>
+            <h1><label>HSC BOARD  :{{hsc_board}}</label></h1>
+            <h1><label>HSC SUBJECT :{{hsc_subject}} </label></h1>
+            <h1><label>GRADUATION : {{undergrad_degree}}</label></h1>
+            <h1><label>GRADUATION PERCENTAGE {{degree_percentage}}</label></h1>
+            <h1><label>WORK EXPERIENCE : {{work_experience}}</label></h1>
+            <h1><label>EMP TEST PERCENTAGE : {{emp_test_percentage}}</label></h1>
+            <h1><label>SPECIALISATION : {{specialisation}}</label></h1>
+            <h1><label>MBA PERCENTAGE {{mba_percent}}</label></h1>
+
+            
+
+            
+
+            
+
+
+
+
+
+
+
+        </div>
+
+  
+    </div>
+
+    <section>
+        
+
+    </section>
+
+
+    
+</body>
+</html>
