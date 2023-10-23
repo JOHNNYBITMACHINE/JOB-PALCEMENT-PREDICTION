@@ -1,3 +1,5 @@
+![Alt text](image.png)
+
 <p 
     style="text-align: center;background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%)
     ; font-size: 50;">
@@ -17,6 +19,8 @@
 <h4>Gradution degree: graduation degree and percentage </h4>
 <h3> Also other diiferent attributes 
 </h3>
+
+
 
 <h3>Data Collection and Preprocessing:<h3>
     <h3>
